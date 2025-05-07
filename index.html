@@ -14,6 +14,45 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Customizacao-->
+        <style>
+            .projects-container {
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+    
+            .project {
+                flex: 1;
+                text-align: center;
+                padding: 10px;
+            }
+    
+            .project img {
+                width: 100%;
+                max-width: 300px;
+                height: auto;
+                object-fit: cover;
+                border-radius: 8px;
+            }
+    
+            .project h3 {
+                margin-top: 10px;
+                font-size: 1.2rem;
+            }
+    
+            .project p {
+                font-size: 0.95rem;
+                margin: 5px 0 10px;
+            }
+    
+            .project a {
+                color: #007bff;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -302,17 +341,45 @@
             <hr class="m-0" />
             <!-- Awards-->
             <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Projetos</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
+                    <div class="resume-section-content">
+                        <h2 class="mb-5">Projetos</h2>
+                
+                        <div class="projects-container">
+                            <!-- Projeto 1: IA -->
+                            <div class="project">
+                                <h4 class="project-title">IA</h4>
+                                <img src="assets/img/IA.png" alt="Projeto IA">
+                                <h3>Classificação de Imagens com Deep Learning</h3>
+                                <p>Modelo treinado com PyTorch e TorchVision para classificar imagens com uso de GPU.</p>
+                                
+                                <div class="project-links">
+                                    <a class="deploy-link" href="https://skincancerclassifier-djatrfwilf2jnqeq5qbesb.streamlit.app/" target="_blank">🔗 Ver Deploy</a>
+                                    <a class="storytelling-link" href="https://github.com/Fagner608/An-lise-Explorat-ria-de-Dados-de-Log-stica/blob/main/stroytelling.ipynb" target="_blank">📊 Storytelling</a>
+                                </div>
+                            </div>
                             
-                            Renovando projetos. Os antigos podem ser encontrados no meu github (no cabeçado do portifólio).
-                            Em desenvolvimento para portifólio, desenvolvo um projeto de classificação de imagem com DeepLearning + PyTorch + TorchVision com processamento paraleto (GPU)
-                        </li>
-                    </ul>
-                </div>
+                
+                            <!-- Projeto 2: Data Science -->
+                            <div class="project">
+                                <h4 class="project-title">Ciência de Dados</h4>
+                                <img src="assets/img/datascience.png" alt="Projeto Data Science">
+                                <h3>Atualizando</h3>
+                                <p>....</p>
+                                <a href="..." target="_blank">Ver Projeto</a>
+                            </div>
+                
+                            <!-- Projeto 3: BI -->
+                            <div class="project">
+                                <h4 class="project-title">Business Intelligence</h4>
+                                <img src="assets/img/analise.png" alt="Projeto BI">
+                                <h3>Atualizando</h3>
+                                <p>....</p>
+                                <a href="..." target="_blank">Ver Projeto</a>
+                            </div>
+                        </div>
+                    </div>
             </section>
+                
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
